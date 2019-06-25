@@ -41,12 +41,25 @@ def number_to_full_month_name(monthNum)
 
 end
 
-  def number_to_short_month_name(monthNum)
-    if monthNum == 1
-      return "Jan"
-    elsif monthNum == 4
-      return "Apr"
-    elsif monthNum == 10
-      return "Oct"
-    end
+def number_to_short_month_name(monthNum)
+  if monthNum == 1
+    return "Jan"
+  elsif monthNum == 4
+    return "Apr"
+  elsif monthNum == 10
+    return "Oct"
+  end
+end
+def volume_of_cube(side)
+  return side * side
+end
+
+def volume_of_sphere(radius)
+  answer = (4/3r) * Math::PI * (radius * radius * radius)
+  return answer.round(1)
+end
+
+def fahrenheit_to_celsius(temp)
+  answer = (temp-32) * (5/9r)
+  return answer.round(1)
 end
